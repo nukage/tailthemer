@@ -1,7 +1,7 @@
 {
-  "name": "@jeffreyvr/tailwindcss-tailpress",
+  "name": "@nukage/tailthemer",
   "version": "2.0.0",
-  "description": "Tailwind plugin for TailPress.",
+  "description": "Fork of @jeffreyvr/tailwindcss-tailpress with additional utilities for re-using classes from Wordpress.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "tailpress",
     "wordpress"
   ],
-  "author": "Jeffrey van Rossum",
+  "author": "Tom Myruski",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
