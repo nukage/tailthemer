@@ -26,6 +26,25 @@ const fontSizeMapper = (fontSizes) => {
     return result;
 }
 
+const fontFamMapper = (fontFams) => {
+    let result = {};
+
+    fontFams.forEach(function(fontFam) {
+        result[''+fontFam.slug+''] = fontFam.fontFamily;
+    });
+
+    return result;
+}
+
+const customMapper = (items) => {
+    let result = {};
+    Object.keys(items).forEach(function(item) {
+      result[item] = items[item];
+    });
+  
+    return result;
+  }
+  
 const spacingMapper = (spacing) => {
     let result = {};
 
@@ -117,4 +136,4 @@ const tailwind = plugin(function ({addUtilities, addComponents, e, prefix, confi
     });
 });
 
-module.exports = {theme, colorMapper, fontSizeMapper, spacingMapper, tailwind};
+module.exports = {theme, colorMapper, fontSizeMapper, fontFamMapper, customMapper, spacingMapper, tailwind};
