@@ -7,6 +7,7 @@ const theme = (path, theme) => {
 }
 
 const colorMapper = (colors) => {
+    if (!colors) return;
     let result = {};
 
     colors.forEach(function(color) {
@@ -17,6 +18,7 @@ const colorMapper = (colors) => {
 }
 
 const fontSizeMapper = (fontSizes) => {
+    if (!fontSizes) return;
     let result = {};
 
     fontSizes.forEach(function(fontSize) {
@@ -27,6 +29,7 @@ const fontSizeMapper = (fontSizes) => {
 }
 
 const fontFamMapper = (fontFams) => {
+    if (!fontFams) return;
     let result = {};
 
     fontFams.forEach(function(fontFam) {
@@ -37,6 +40,7 @@ const fontFamMapper = (fontFams) => {
 }
 
 const customMapper = (items) => {
+    if (!items) return;
     let result = {};
     Object.keys(items).forEach(function(item) {
       result[item] = items[item];
@@ -46,6 +50,7 @@ const customMapper = (items) => {
   }
   
 const spacingMapper = (spacing) => {
+    if (!spacing) return;
     let result = {};
 
     spacing.forEach(function(spacings) {
